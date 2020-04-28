@@ -1,5 +1,5 @@
 server:
-  port: ${LINCE_PROJECT_PORT:8080}
+  port: ${LINCE_PREDICT_PORT:8080}
 
 spring:
   application:
