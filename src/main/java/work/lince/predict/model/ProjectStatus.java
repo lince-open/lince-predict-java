@@ -1,4 +1,4 @@
-package work.lince.project.model;
+package work.lince.predict.model;
 
 public enum ProjectStatus {
 

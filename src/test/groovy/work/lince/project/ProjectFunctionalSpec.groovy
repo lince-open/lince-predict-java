@@ -1,4 +1,4 @@
-package work.lince.project
+package work.lince.predict
 
 import groovyx.net.http.ContentType
 import groovyx.net.http.RESTClient
@@ -73,9 +73,9 @@ class ProjectFunctionalSpec extends Specification {
 
         where:
             title             | userName   | status                || expectedOwner
-            "Project Title 1" | null       | null                  || 'anonymous'
-            "Project Title 2" | 'x1324'    | ProjectStatus.CREATED || 'x1324'
-            "Project Title 3" | 'zxcvasdf' | ProjectStatus.CLOSED  || 'zxcvasdf'
+            "Analyze Title 1" | null       | null                  || 'anonymous'
+            "Analyze Title 2" | 'x1324'    | ProjectStatus.CREATED || 'x1324'
+            "Analyze Title 3" | 'zxcvasdf' | ProjectStatus.CLOSED  || 'zxcvasdf'
 
 
     }

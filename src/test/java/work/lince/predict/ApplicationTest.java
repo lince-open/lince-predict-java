@@ -1,4 +1,4 @@
-package work.lince.project;
+package work.lince.predict;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package work.lince.project
+package work.lince.predict
 
 import groovyx.net.http.ContentType
 import groovyx.net.http.RESTClient

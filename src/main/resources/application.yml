@@ -12,14 +12,6 @@ spring:
     default-property-inclusion: non_null
     time-zone: America/Sao_Paulo
 
-  datasource:
-    url: ${LINCE_PROJECT_DATASOURCE_URL:jdbc:h2:file:~\.h2\lince-db}
-    platform: ${LINCE_PROJECT_DATASOURCE_PLATFORM:h2}
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-
 logging:
   level:
     work:
