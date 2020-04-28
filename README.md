@@ -36,3 +36,39 @@ docker push linceopen/lince-predict:latest
 ## Execução
 mvn spring-boot:run
 
+mvn spring-boot:run -Dmaven.test.skip=true
+
+##CURL
+
+curl -X POST http://localhost:8080/analysis \
+-H "Content-Type: application/json" \
+-H "lince.user.name: pzatta" \
+-d '{ 
+    	"sample": [
+    		{"x":1.0,"y":31.0},
+    		{"x":2.0,"y":32.0},
+    		{"x":3.0,"y":33.0},
+    		{"x":4.0,"y":34.0},
+    		{"x":5.0,"y":35.0},
+    		{"x":14.0,"y":32.0}
+    	],
+    	"predict": [
+    		{"x":1.0},
+    		{"x":2.0},
+    		{"x":3.0},
+    		{"x":4.0},
+    		{"x":5.0},
+    		{"x":6},
+    		{"x":7},
+    		{"x":8},
+    		{"x":9},
+    		{"x":10},
+    		{"x":11},
+    		{"x":12},
+    		{"x":13},
+    		{"x":14},
+    		{"x":15},
+    		{"x":20},
+    		{"x":30}
+    	]
+    }'
