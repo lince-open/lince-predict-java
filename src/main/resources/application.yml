@@ -1,0 +1,18 @@
+server:
+  port: ${LINCE_PREDICT_PORT:8080}
+
+spring:
+  application:
+    name: @project.artifactId@
+
+  profiles:
+    include: management
+
+  jackson:
+    default-property-inclusion: non_null
+    time-zone: America/Sao_Paulo
+
+logging:
+  level:
+    work:
+      lince: WARN
